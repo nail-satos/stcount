@@ -8,9 +8,9 @@ import time
 
 # Streamlitの基礎:レッスン1
 # 文字を表示する
-st.title('アプリ「群衆の認識に挑戦だ！」')           # タイトル
+st.header('アプリ「群衆の認識に挑戦だ！」')           # タイトル
 
-st.sidebar.subheader('好きな難易度を選んで「スタート」ボタンを押してね')       # サブヘッダ
+st.sidebar.subheader('難易度を選んで「スタート」ボタンを押してください')       # サブヘッダ
 st.write('制限時間内に 写真の中に何人の人がいるかを数えよう！')         # キャプション
 
 # level = st.radio("難易度を選択してください", ("初級の画像", "中級の画像", "上級の画像"), horizontal=True)
@@ -48,11 +48,11 @@ if st.sidebar.button('スタート（ここをクリック）'):
     st.balloons()
 
     if level == '初級':
-        st.success('時間内に数えられたかな？ 答えは【12人】でした！', icon="✅")        
+        st.success('制限時間内に数えられましたか？　画像に写っていたのは12人でした', icon="✅")        
     if level == '中級':
-        st.success('ちょっと難しかったかな？ 正解は後からAIで確認してみよう！', icon="✅")        
+        st.success('ちょっと難しかったでしょうか？　正解は後ほどAIで確認しましょう', icon="✅")        
     if level == '上級':
-        st.success('さすがに無理だったかな… 正解は後からAIで確認してみよう！', icon="✅")        
+        st.success('すごい人数でさすがに無理ですね。正解は後からAIで確認してみよう', icon="✅")        
 
     
 
