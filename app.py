@@ -6,8 +6,15 @@ import time
 # Streamlit Community CloudでOpenCVアプリを公開する
 # https://zenn.dev/shimat/articles/baee671a1a00d0
 
+
 # Streamlitの基礎:レッスン1
 # 文字を表示する
+
+# タブに表示されるページ名の変更
+st.set_page_config(page_title="群衆の認識に挑戦だ！")
+# Streamlit入門 – テーマの変更, ページの設定 | 楽しみながら理解するAI・機械学習入門
+# https://data-analytics.fun/2022/07/10/streamlit-theme-page-settings/
+
 st.header('アプリ「群衆の認識に挑戦だ！」')           # タイトル
 
 st.sidebar.subheader('難易度を選んで「スタート」ボタンを押してください')       # サブヘッダ
